@@ -110,3 +110,5 @@ class ListCreateAPIView(ListAPIView, generics.ListCreateAPIView):
     def perform_create(self, serializer):
         super().perform_create(serializer)
         
+class RetrieveAPIView(generics.RetrieveAPIView, GenericAPIView):
+    pass
